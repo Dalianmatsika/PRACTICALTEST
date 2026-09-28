@@ -1,8 +1,14 @@
 public class Main {
-    public static void main(String[] args)
-    String[] cities = {"Cape Town", "Port Elizabeth", "Pretoria"};
-    int[][] sales = {{1000 2000, 3000}, {2000, 3000, 4000}, {1500, 1100, 1200}} {;
-    System.out.println("GAMING CONSOLE REPORT");
+    public static void main(String[] args){
+
+    }
+
+    String[] cities = {"CAPE TOWN", "PORT ELIZABETH", "PRETORIA"};
+    int[][] sales = {{1000,2000, 3000}, {2000, 3000, 4000}, {1500, 1100, 1200}};
+
+    {
+        ;
+        System.out.println("GAMING CONSOLE REPORT");
         System.out.println("------------------------------------------------------------");
         System.out.printf("%-15%-10s%-10s%-10s%n",
                 "PS5", "XBOX", "SWITCH");
@@ -17,18 +23,26 @@ public class Main {
             System.out.println("------------------------------------------------------------");
 
             int maxSales = -1;
-            String topCity =";
+            String topCity = "";
 
             for (int i = 0; i < cities.length; i++) {
-               int cityTotal = 0
-                for (int i = 0; i < cities.length; i++) {
-                    cityTotal +=sales[i][j];
+                int cityTotal = 0;
+                for (int j = 0; i < cities.length; i++) {
+                    cityTotal += sales[i][j];
                 }
 
                 System.out.printf("%-15s %d%n",
-                       cities[i] ,cityTotal);
+                        cities[i], cityTotal);
 
                 if (cityTotal > maxSales) {
                     maxSales = cityTotal;
-               topCity =cities[i];
-           }
+                    topCity = cities[i];
+                }
+            }
+            System.out.println("------------------------------------------------------------");
+            System.out.println("CITY WITH THE MOST SALES: " + topCity);
+            System.out.println("------------------------------------------------------------");
+        }
+    }
+}
+
